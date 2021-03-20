@@ -1,0 +1,88 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".activity.LoginActivity"
+    android:background="@color/colorPrimaryDark"
+    >
+
+
+    <TextView
+        android:textColor="#F4EFEF"
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="88sp"
+        android:layout_marginEnd="128sp"
+        android:text="@string/notifyme"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/loginemail"
+        android:layout_width="310sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="48sp"
+        android:layout_marginTop="72sp"
+        android:layout_marginEnd="53sp"
+        android:background="@drawable/login_text_background"
+        android:drawableStart="@drawable/ic_round_person"
+        android:drawablePadding="10sp"
+        android:focusable="true"
+        android:hint="@string/user_name"
+        android:padding="10sp"
+        android:textColor="#DDF0F8F4"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#2C2B2C" />
+
+
+    <EditText
+        android:textColor="#DDF0F8F4"
+        android:id="@+id/password"
+        android:layout_width="323sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginemail"
+        android:layout_alignEnd="@+id/loginemail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="46sp"
+        android:layout_marginTop="33sp"
+        android:layout_marginEnd="-5sp"
+        android:background="@drawable/login_text_background"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10sp"
+        android:textColorHint="#2C2B2C" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="231sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="-209sp"
+        android:layout_marginBottom="160sp"
+        android:background="#E91EA5"
+        android:text="@string/login" />
+
+    <TextView
+        android:textColor="#F4E0EE"
+        android:id="@+id/logToRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89sp"
+        android:text="@string/no_account_yet_register_here"
+        android:textSize="15sp" />
+
+</RelativeLayout>

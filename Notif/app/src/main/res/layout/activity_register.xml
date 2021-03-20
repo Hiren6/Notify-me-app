@@ -1,0 +1,106 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".activity.LoginActivity"
+    android:background="@color/colorPrimaryDark"
+    >
+
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/notifyme"
+        android:textColor="#F8F5F5"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="310sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/login_text_background"
+        android:drawableStart="@drawable/ic_round_person"
+        android:drawablePadding="10sp"
+        android:focusable="true"
+        android:hint="@string/user_name"
+        android:padding="10sp"
+        android:textColor="#DDF0F8F4"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#595357" />
+
+    <EditText
+        android:id="@+id/registeremail"
+        android:layout_width="310sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/login_text_background"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10sp"
+        android:focusable="true"
+        android:hint="@string/email"
+        android:padding="10sp"
+        android:textColor="#DDF0F8F4"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#595357" />
+
+    <EditText
+        android:id="@+id/registerpassword"
+        android:layout_width="323sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registeremail"
+        android:layout_alignEnd="@+id/registeremail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-6dp"
+        android:background="@drawable/login_text_background"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10sp"
+        android:textColor="#DDF0F8F4"
+        android:textColorHint="#595357" />
+
+    <Button
+        android:id="@+id/regisButton"
+        android:layout_width="231sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="-209sp"
+        android:layout_marginBottom="147dp"
+        android:background="#E91EA5"
+        android:text="@string/register" />
+
+    <TextView
+        android:textColor="#F8F3F6"
+        android:id="@+id/RestoLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89sp"
+        android:text="@string/already_have_an_account_login_here"
+        android:textSize="15sp" />
+
+</RelativeLayout>

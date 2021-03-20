@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class='form-class'>
+    <form method='POST' action='.' enctype="multipart/form-data">{% csrf_token %}
+        <div class="form-group">
+            <input type="text" class="form-control form-control1"  name='ins' required placeholder="Type your username">
+            <input type="text" class="form-control form-control1"  name='name' required placeholder="Type TA's username">
+            <input type="text" class="form-control form-control1"  name='id' required placeholder="Type your course id">
+            <input type="text" class="form-control form-control1"  name='pass' required placeholder="Type the dummy password">
+            <button type="submit" class="btn submit1">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="20dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/course_name"
+        android:hint="@string/course_name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/course_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/course_key"
+        android:layout_below="@+id/course_name"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/course_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/course_key"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="21dp"
+        android:shadowColor="@android:color/background_dark"
+        android:text="@string/register" />
+
+    <Button
+        android:id="@+id/cancel_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/course_key"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="-60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="-146dp"
+        android:shadowColor="@android:color/background_dark"
+        android:text="@string/cancel" />
+
+</RelativeLayout>

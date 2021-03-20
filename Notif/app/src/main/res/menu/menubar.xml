@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/add"
+        android:title="@string/add_course"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/settings"
+        android:title="@string/settings"
+        app:showAsAction="never"/>
+    <item android:id="@+id/profile"
+        android:title="@string/profile"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/edit"
+                android:title="@string/edit"/>
+            <item
+                android:id="@+id/view"
+                android:title="@string/view"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/logOut"
+        android:title="Log Out"
+        app:showAsAction="never"/>
+
+
+</menu>
